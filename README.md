@@ -1,5 +1,7 @@
 # react-native-actionsheet-cstm
 
+[![npm version](https://badge.fury.io/js/react-native-actionsheet-cstm.svg)](https://badge.fury.io/js/react-native-actionsheet-cstm)
+
 ## Getting started
 
 `$ npm install react-native-actionsheet-cstm --save`
