@@ -1,0 +1,50 @@
+{
+  "name": "react-native-actionsheet-cstm",
+  "version": "0.0.1",
+  "description": "Custom ActionSheet for React Native",
+  "main": "/src/index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurbela/react-native-actionsheet-cstm.git",
+    "baseUrl": "https://github.com/gurbela/react-native-actionsheet-cstm"
+  },
+  "keywords": [
+    "react-native",
+    "action-sheet",
+    "action-sheet-custom",
+    "react-native-actionsheet-custom",
+    "react-native-actionsheet-cstm"
+  ],
+  "author": "Levan Gurbeleishvili <gurbela@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gurbela/react-native-actionsheet-cstm/issues"
+  },
+  "homepage": "https://github.com/gurbela/react-native-actionsheet-cstm",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.59.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@types/jest": "^24.0.24",
+    "@types/react-native": "^0.60.25",
+    "@types/react-test-renderer": "16.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.56.0",
+    "react": "^16.8.3",
+    "react-native": "^0.61.5",
+    "react-test-renderer": "16.9.0",
+    "typescript": "^3.7.3"
+  }
+}
