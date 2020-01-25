@@ -7,16 +7,16 @@
 ## Demo
 
 <p align="center">
-  <img src="https://github.com/gurbela/react-native-actionsheet-cstm/blob/master/image/Simulator Screen Shot - iPhone1.png" 
+  <img src="https://raw.githubusercontent.com/gurbela/react-native-actionsheet-cstm/master/image/Simulator%20Screen%20Shot%20-%20iPhone1.png" 
     height="380" width="200"
   />
-  <img src="https://github.com/gurbela/react-native-actionsheet-cstm/blob/master/image/Screenshot_1.png" 
+  <img src="https://raw.githubusercontent.com/gurbela/react-native-actionsheet-cstm/master/image/Screenshot_1.png" 
     height="380"  width="200"
   />
-  <img src="https://github.com/gurbela/react-native-actionsheet-cstm/blob/master/image/Simulator Screen Shot - iPhone2.png" 
+  <img src="https://raw.githubusercontent.com/gurbela/react-native-actionsheet-cstm/master/image/Simulator%20Screen%20Shot%20-%20iPhone2.png" 
     height="380"  width="200"
   />
-   <img src="https://github.com/gurbela/react-native-actionsheet-cstm/blob/master/image/Screenshot_2.png" 
+   <img src="https://raw.githubusercontent.com/gurbela/react-native-actionsheet-cstm/master/image/Screenshot_2.png" 
     height="380"  width="200"
   />
 </p>
