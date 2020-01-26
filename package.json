@@ -1,6 +1,6 @@
 {
   "name": "react-native-actionsheet-cstm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Custom ActionSheet for React Native",
   "main": "index.tsx",
   "scripts": {
