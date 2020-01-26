@@ -25,7 +25,7 @@
 
 ## A basic Setup
 
-```javascript
+```typescript
 import React, {useState} from 'react';
 import {SafeAreaView, Text, ScrollView, TouchableOpacity} from 'react-native';
 
