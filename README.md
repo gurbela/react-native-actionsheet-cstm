@@ -32,7 +32,7 @@ import {SafeAreaView, Text, ScrollView, TouchableOpacity} from 'react-native';
 import {ActionSheet} from 'react-native-actionsheet-cstm';
 
 const App = () => {
-  const [showActionSheed, setShowActionSheet] = useState < boolean > false;
+  const [showActionSheed, setShowActionSheet] = useState<boolean>(false);
 
   const onShowActionSheet = () => {
     setShowActionSheet(true);
