@@ -20,7 +20,7 @@ export interface ActionSheetProps {
   cancelButtonStyle?: StyleProp<ViewStyle>;
   cancelText?: string;
   cancelTextStyle?: StyleProp<ViewStyle>;
-  hiddeCancel?: boolean;
+  hideCancel?: boolean;
 
   // Default Action Sheet Provided
   visible: boolean;

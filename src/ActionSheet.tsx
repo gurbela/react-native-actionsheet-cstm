@@ -13,7 +13,7 @@ import st from './style';
 
 export const ActionSheet: React.FC<ActionSheetProps> = props => {
   const top = new Animated.Value(100);
-  const hiddeCancel: boolean = props.hiddeCancel || false;
+  const hideCancel: boolean = props.hideCancel || false;
 
   useEffect(() => {
     Animated.timing(top, {
@@ -21,7 +21,7 @@ export const ActionSheet: React.FC<ActionSheetProps> = props => {
       duration: 100,
       delay: 5,
     }).start();
-  }, [props.visible]);
+  }, [props.visible, top]);
 
   return (
     <Modal
@@ -38,11 +38,13 @@ export const ActionSheet: React.FC<ActionSheetProps> = props => {
 
         <Animated.View style={{top}}>
           <View style={[st.container, st.shadow, props.containerStyle]}>
-            <View style={[st.titleContainer, props.titleContainerStyle]}>
-              <Text style={[st.title, props.titleTextStyle]}>
-                {props.title || 'Action Sheet Title'}
-              </Text>
-            </View>
+            {!!props.title && (
+              <View style={[st.titleContainer, props.titleContainerStyle]}>
+                <Text style={[st.title, props.titleTextStyle]}>
+                  {props.title}
+                </Text>
+              </View>
+            )}
 
             {props.actionItems.map((actionItem, i) => {
               return (
@@ -51,6 +53,7 @@ export const ActionSheet: React.FC<ActionSheetProps> = props => {
                   activeOpacity={0.9}
                   style={[
                     st.btnContainer,
+                    i === 0 && !props.title && st.titleContainer,
                     i === props.actionItems.length - 1
                       ? st.lastBtnContainer
                       : st.btnContainerBorder,
@@ -64,7 +67,7 @@ export const ActionSheet: React.FC<ActionSheetProps> = props => {
             })}
           </View>
 
-          {!hiddeCancel && (
+          {!hideCancel && (
             <TouchableOpacity
               activeOpacity={0.9}
               style={[st.shadow, st.cancelContainer, props.cancelButtonStyle]}

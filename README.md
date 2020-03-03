@@ -32,7 +32,7 @@ import {SafeAreaView, Text, ScrollView, TouchableOpacity} from 'react-native';
 import {ActionSheet} from 'react-native-actionsheet-cstm';
 
 const App = () => {
-  const [showActionSheed, setShowActionSheet] = useState<boolean>(false);
+  const [showActionSheet, setShowActionSheet] = useState<boolean>(false);
 
   const onShowActionSheet = () => {
     setShowActionSheet(true);
@@ -58,7 +58,7 @@ const App = () => {
         </TouchableOpacity>
 
         <ActionSheet
-          visible={showActionSheed}
+          visible={showActionSheet}
           onClose={onCloseActionSheet}
           actionItems={[
             {
@@ -94,22 +94,22 @@ export default App;
 
 ## ActionSheetProps
 
-| Name                 | Type                 | Default              | Description                                                                                                |
-| -------------------- | -------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------- |
-| visible              | boolean              | false                | Show the Action sheet                                                                                      |
-| onClose              | function             | null                 | Trigger a function asking to close the Action sheet.                                                       |
-| actionItems          | Array<ActionItem>    | null                 | (array of ActionItem) - a list of button                                                                   |
-| onShow?              | function             | null                 | The onShow prop allows passing a function that will be called once the Action sheet has been shown.        |
-| onDismiss?           | function             | null                 | The onDismiss prop allows passing a function that will be called once the Action sheet has been dismissed. |
-| backdropStyle?       | StyleProp<ViewStyle> | null                 | Back drop style                                                                                            |
-| containerStyle?      | StyleProp<ViewStyle> | null                 | Container style                                                                                            |
-| titleContainerStyle? | StyleProp<ViewStyle> | null                 | Container title style                                                                                      |
-| title?               | string               | 'Action Sheet Title' | Action sheet title                                                                                         |
-| titleTextStyle?      | StyleProp<ViewStyle> | null                 | Action sheet title style                                                                                   |
-| cancelButtonStyle?   | StyleProp<ViewStyle> | null                 | Action sheet cancel button style                                                                           |
-| cancelText?          | string               | 'Cancel'             | Action sheet cancel button title                                                                           |
-| cancelTextStyle?     | StyleProp<ViewStyle> | null                 | Action sheet cancel button text style                                                                      |
-| hiddeCancel          | boolean              | false                | Hidde the Action sheet Cancel button                                                                       |
+| Name                 | Type                 | Default  | Description                                                                                                |
+| -------------------- | -------------------- | -------- | ---------------------------------------------------------------------------------------------------------- |
+| visible              | boolean              | false    | Show the Action sheet                                                                                      |
+| onClose              | function             | null     | Trigger a function asking to close the Action sheet.                                                       |
+| actionItems          | Array<ActionItem>    | null     | (array of ActionItem) - a list of button                                                                   |
+| onShow?              | function             | null     | The onShow prop allows passing a function that will be called once the Action sheet has been shown.        |
+| onDismiss?           | function             | null     | The onDismiss prop allows passing a function that will be called once the Action sheet has been dismissed. |
+| backdropStyle?       | StyleProp<ViewStyle> | null     | Back drop style                                                                                            |
+| containerStyle?      | StyleProp<ViewStyle> | null     | Container style                                                                                            |
+| titleContainerStyle? | StyleProp<ViewStyle> | null     | Container title style                                                                                      |
+| title?               | string               | null     | Action sheet title (Not required)                                                                          |
+| titleTextStyle?      | StyleProp<ViewStyle> | null     | Action sheet title style                                                                                   |
+| cancelButtonStyle?   | StyleProp<ViewStyle> | null     | Action sheet cancel button style                                                                           |
+| cancelText?          | string               | 'Cancel' | Action sheet cancel button title                                                                           |
+| cancelTextStyle?     | StyleProp<ViewStyle> | null     | Action sheet cancel button text style                                                                      |
+| hideCancel           | boolean              | false    | Hidde the Action sheet Cancel button                                                                       |
 
 ## ActionItem
 
